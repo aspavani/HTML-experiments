@@ -2,35 +2,26 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <title>Images for Destinations</title>
     <style>
         *{
             box-sizing: border-box;
         }
 
-        .flex_container{
+        .flex-container{
             display:flex;
             flex-direction:row;
             font-size:20px;
             text-align:center;
         }
 
-        .flex-item-left{
+        .flex-item{
             background-color:blanchedalmond;
             padding:10px;
             flex:50%;
             border-style:solid;
-            border-color:blue;
-            padding:20px
-        }
-
-        .flex-item-right{
-            background-color:blanchedalmond;
-            padding:10px;
-            flex:50%;
-            border-style:solid;
-            border-color:blue;
-            padding:20px
+            border-color:red;
         }
 
         /* Responsive layout - changes flex direction to column for screen sizes less than 600px */
@@ -44,7 +35,7 @@
             display:block;
             margin-left:auto;
             margin-right:auto;
-        
+            width:100%;
         }
     </style>
 
@@ -53,23 +44,23 @@
 <body>
 
     <h1>TRAVEL DESTINATIONS IN KARNATAKA</h1>
-    <div class="flexcontainer">
-        <div class="flex-item-left">
-            <p>This is bangalore</p>
+    <div class="flex-container">
+        <div class="flex-item">
+            <p>This is Bangalore</p>
             <img src="./images/bangalore.jpeg" alt="Bangalore">
         </div>
     
-        <div class="flex-item-right">
+        <div class="flex-item">
             <p>This is Mysuru</p>
             <img src="./images/mysuru.jpeg" alt="Mysuru">
         </div>
 
-        <div class="flex-item-left">
+        <div class="flex-item">
             <p>This is Hampi</p>
             <img src="./images/hampi.jpg" alt="Hampi">
         </div>
 
-        <div class="flex-item-right">
+        <div class="flex-item">
             <p>This is Coorg</p>
             <img src="./images/coorg.jpeg" alt="Coorg">
         </div>
